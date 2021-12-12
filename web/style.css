@@ -1,0 +1,13 @@
+body{
+    font-size: 100pt;
+    text-align: center;
+    
+}
+h1 :on{
+    font-size: 110pt;
+    outline: auto;
+    color: blue;
+}
+img{
+    scale: 1000pt;
+}

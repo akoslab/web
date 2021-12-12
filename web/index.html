@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>keksz</title>
+</head>
+<body>
+    <h1 id="ciggerek">Cigányok</h1>
+    <h2>kissebb Cigányok</h2>
+    <p>legkissebb Cigányok</p>
+    <button onclick="move()">nyomjad cigány</button>
+    <div id="cigger">
+    <img src="https://video.hirtv.hu/data/videos/final/2020_02/232902/images/5_fit_800x450.jpg?direct=1" alt="nagy ciggerek">
+    </div>
+    <script>
+        let runned =0;
+
+        function move(){
+            console.log("clicked");
+            
+            if(runned%2==0){
+                document.getElementById("cigger").style.transform = "rotate(20deg)";
+                runned=runned+1;
+                console.log(runned+" - positive")
+            }
+            // it works now
+            else{
+                document.getElementById("cigger").style.transform = "rotate(-20deg)";
+                runned=runned+1;
+                console.log(runned+" - negative")
+            }
+        }
+    </script>
+</body>
+</html>
