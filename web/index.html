@@ -15,24 +15,6 @@
     <div id="cigger">
     <img src="https://video.hirtv.hu/data/videos/final/2020_02/232902/images/5_fit_800x450.jpg?direct=1" alt="nagy ciggerek">
     </div>
-    <script>
-        let runned =0;
-
-        function move(){
-            console.log("clicked");
-            
-            if(runned%2==0){
-                document.getElementById("cigger").style.transform = "rotate(20deg)";
-                runned=runned+1;
-                console.log(runned+" - positive")
-            }
-            // it works now
-            else{
-                document.getElementById("cigger").style.transform = "rotate(-20deg)";
-                runned=runned+1;
-                console.log(runned+" - negative")
-            }
-        }
-    </script>
+    <script src="movement.js"></script>
 </body>
 </html>
